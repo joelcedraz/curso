@@ -1,0 +1,13 @@
+<%= form_for @restaurante do |f| %>
+	Nome: <%= f.text_field :nome %>
+	Especialidade: <%= f.text_field :especialidade %>
+	<%= f.submit %>
+<% end %>
+
+<%= link_to "Voltar", restaurantes_path %>
+
+<ul>
+<% @restaurante.errors.full_messages.each do |msg| %>
+<li><%= msg %> </li>
+<% end %>
+</ul>

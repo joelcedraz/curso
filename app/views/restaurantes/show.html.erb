@@ -1,0 +1,21 @@
+<h1>Restaurante</h1>
+
+<%= link_to 'Novo', new_restaurante_path %>
+
+<table>
+	<tr>
+	<th>ID</th>
+	<th>Nome</th>
+	<th>Endereço</th>
+	<th>Especialidade</th>
+	</tr>
+	<tr>
+	<td><%= @restaurante.id %> </td>
+	<td><%= @restaurante.nome %> </td>
+	<td><%= @restaurante.especialidade %> </td>
+	<td><%= @restaurante.valor_total_gasto %></td>
+	</tr>
+</table>
+
+<%= link_to "Voltar", restaurantes_path %>
+<%= link_to 'Deletar', {action: 'destroy', id: @restaurante}, {method: "delete"} %>
