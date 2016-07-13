@@ -1,7 +1,8 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  nome: MyString
+ponto_da_picanha:
+ nome: Ponto da Picanha
+ especialidade: Churrasco
 
-two:
-  nome: MyString
+kbab:
+ nome: Kbab

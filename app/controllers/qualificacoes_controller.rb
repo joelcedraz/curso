@@ -69,6 +69,6 @@ class QualificacoesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def qualificacao_params
-      params.require(:qualificacao).permit(:cliente_id, :restaurante_id, :nota, :valor_gasto)
+      params.require(:qualificacao).permit(:cliente_id, :restaurante_id, :nota, :valor_gasto, :restaurante_id, :cliente_id)
     end
 end

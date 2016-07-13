@@ -2,7 +2,6 @@ class Cliente < ActiveRecord::Base
 	validates :nome, presence: true
 	validates :nome, length: { maximum: 50 }
 	validate :deve_ser_nascido_antes_de_2000
-
 	has_many :qualificacoes
 
 	private
