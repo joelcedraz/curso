@@ -1,0 +1,4 @@
+<p id='<%= "qualificacoes_#{qualificacao.id}" %>'>
+	<%= qualificacao.cliente.nome %> - <%= qualificacao.nota %> - <%= qualificacao.valor_gasto %>
+	<%= link_to '(remover)', qualificacao, method: 'delete', remote: true, id: "remove_qualificacao_#{qualificacao.id}" %>
+</p>

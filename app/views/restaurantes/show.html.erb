@@ -21,8 +21,15 @@
               :class => 'btn btn-danger' %>
 
 <h3>Comentários</h3>
- <div>
+ <div id="comentarios">
  <%= render @restaurante.comentarios %>
 </div>
 
 <%= render partial: "comentarios/novo_comentario", locals: {comentavel: @restaurante} %>
+
+<h3>Qualificacoes</h3>
+ <div id="qualificacoes">
+ <%= render @restaurante.qualificacoes %>
+</div>
+
+<%= novo_qualificacao @restaurante %>

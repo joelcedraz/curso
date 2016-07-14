@@ -1,0 +1,9 @@
+<%= form_for Qualificacao.new do |f| %>
+
+	<%= f.hidden_field :restaurante_id, value: restaurante.id %>
+	<%= f.label :cliente %> <%= f.select :cliente_id, Cliente.all.collect {|i| [i.nome,i.id]}, {}, class: "form-control" %> <br>
+	<%= f.label :nota %><%= f.number_field :nota, class: "form-control" %><br />
+	<%= f.label :valor_gasto %> <%= f.number_field :valor_gasto, class: "form-control" %> <br />
+	<%= f.submit %>
+
+<% end %>

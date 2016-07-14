@@ -16679,3 +16679,2686 @@ ActionController::RoutingError (No route matches [GET] "/railroady-master"):
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:32:37 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (915.7ms)
+Completed 200 OK in 1363ms (Views: 1331.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2016-07-13 18:32:39 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.0ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.6ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:32:43 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (8.0ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.8ms)
+  Rendered comentarios/_novo_comentario.html.erb (3.2ms)
+  Rendered restaurantes/show.html.erb within layouts/application (41.2ms)
+Completed 500 Internal Server Error in 56ms
+
+ActionView::Template::Error (unknown attribute 'remote' for Comentario.):
+    1: <%= form_for Comentario.new remote:true do |f| %>
+    2: 
+    3: 	<%= f.hidden_field :comentavel_id, value: comentavel.id %>
+    4: 	<%= f.hidden_field :comentavel_type, value: comentavel.class %>
+  app/views/comentarios/_novo_comentario.html.erb:1:in `_app_views_comentarios__novo_comentario_html_erb__3608411497048322383_69831831348240'
+  app/views/restaurantes/show.html.erb:28:in `_app_views_restaurantes_show_html_erb___97507944995291368_69831817827960'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.1ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:33:02 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.1ms)
+  Rendered comentarios/_novo_comentario.html.erb (11.9ms)
+  Rendered restaurantes/show.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 18:33:03 -0300
+
+
+Started DELETE "/comentarios/16" for 127.0.0.1 at 2016-07-13 18:33:06 -0300
+Processing by ComentariosController#destroy as JS
+  Parameters: {"id"=>"16"}
+  [1m[36mComentario Load (0.5ms)[0m  [1mSELECT  `comentarios`.* FROM `comentarios` WHERE `comentarios`.`id` = 16 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (7.4ms)[0m  [1mDELETE FROM `comentarios` WHERE `comentarios`.`id` = 16[0m
+  [1m[35m (2.8ms)[0m  COMMIT
+Completed 200 OK in 14ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 18:40:01 -0300
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:40:02 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 76ms (Views: 65.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-13 18:40:05 -0300
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (0.2ms)[0m  SELECT `clientes`.* FROM `clientes`
+  Rendered clientes/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 79ms (Views: 75.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:40:06 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (0.1ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 88ms (Views: 84.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pratos" for 127.0.0.1 at 2016-07-13 18:40:07 -0300
+Processing by PratosController#index as HTML
+  [1m[35mPrato Load (0.1ms)[0m  SELECT `pratos`.* FROM `pratos`
+  Rendered pratos/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 77ms (Views: 65.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:40:08 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (1.3ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-13 18:40:09 -0300
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (0.2ms)[0m  SELECT `clientes`.* FROM `clientes`
+  Rendered clientes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:40:31 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:40:31 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.5ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (2.5ms)
+  Rendered comentarios/_novo_comentario.html.erb (3.2ms)
+  Rendered restaurantes/show.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 103ms (Views: 98.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2016-07-13 18:40:36 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "comentario"=>{"comentavel_id"=>"7", "comentavel_type"=>"Restaurante", "comentario"=>"teste 5"}, "commit"=>"Criar Comentario"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO `comentarios` (`comentario`, `comentavel_type`, `comentavel_id`, `created_at`, `updated_at`) VALUES ('teste 5', 'Restaurante', 7, '2016-07-13 21:40:36.568533', '2016-07-13 21:40:36.568533')[0m
+  [1m[35m (1.9ms)[0m  COMMIT
+Completed 200 OK in 8ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.7ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.6ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.2ms)
+  Rendered restaurantes/show.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 95ms (Views: 92.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:40 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2016-07-13 18:40:41 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.8ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (32.1ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:40:43 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.4ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.8ms)
+  Rendered restaurantes/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:43 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:43 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:43 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:43 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:43 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:43 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:43 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2016-07-13 18:40:44 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.7ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.5ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2016-07-13 18:40:48 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "comentario"=>{"comentavel_id"=>"7", "comentavel_type"=>"Restaurante", "comentario"=>"teste 6"}, "commit"=>"Criar Comentario"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO `comentarios` (`comentario`, `comentavel_type`, `comentavel_id`, `created_at`, `updated_at`) VALUES ('teste 6', 'Restaurante', 7, '2016-07-13 21:40:48.487182', '2016-07-13 21:40:48.487182')
+  [1m[36m (1.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:40:52 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:40:54 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.1ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+
+Started GET "/images/favicon.ico" for 127.0.0.1 at 2016-07-13 18:40:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/joelcedraz/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (18.8ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.6ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:40:57 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.3ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.6ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.3ms)
+  Rendered restaurantes/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2016-07-13 18:41:01 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "comentario"=>{"comentavel_id"=>"7", "comentavel_type"=>"Restaurante", "comentario"=>"teste 7"}, "commit"=>"Criar Comentario"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO `comentarios` (`comentario`, `comentavel_type`, `comentavel_id`, `created_at`, `updated_at`) VALUES ('teste 7', 'Restaurante', 7, '2016-07-13 21:41:01.186045', '2016-07-13 21:41:01.186045')
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 9ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 18:44:39 -0300
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:44:39 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:44:44 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.4ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.3ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.6ms)
+  Rendered restaurantes/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 81ms (Views: 78.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2016-07-13 18:44:47 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "comentario"=>{"comentavel_id"=>"7", "comentavel_type"=>"Restaurante", "comentario"=>"teste 8"}, "commit"=>"Criar Comentario"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO `comentarios` (`comentario`, `comentavel_type`, `comentavel_id`, `created_at`, `updated_at`) VALUES ('teste 8', 'Restaurante', 7, '2016-07-13 21:44:47.931091', '2016-07-13 21:44:47.931091')
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:44:50 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 86ms (Views: 85.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:44:52 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.5ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.7ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.2ms)
+  Rendered restaurantes/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/comentarios/22" for 127.0.0.1 at 2016-07-13 18:44:54 -0300
+Processing by ComentariosController#destroy as JS
+  Parameters: {"id"=>"22"}
+  [1m[36mComentario Load (0.4ms)[0m  [1mSELECT  `comentarios`.* FROM `comentarios` WHERE `comentarios`.`id` = 22 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (2.5ms)[0m  [1mDELETE FROM `comentarios` WHERE `comentarios`.`id` = 22[0m
+  [1m[35m (3.5ms)[0m  COMMIT
+Completed 200 OK in 9ms (ActiveRecord: 6.5ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2016-07-13 18:44:58 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "comentario"=>{"comentavel_id"=>"7", "comentavel_type"=>"Restaurante", "comentario"=>"teset 8"}, "commit"=>"Criar Comentario"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `comentarios` (`comentario`, `comentavel_type`, `comentavel_id`, `created_at`, `updated_at`) VALUES ('teset 8', 'Restaurante', 7, '2016-07-13 21:44:58.057461', '2016-07-13 21:44:58.057461')
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:45:01 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:45:53 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.5ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (2.6ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.7ms)
+  Rendered restaurantes/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 74ms (Views: 72.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2016-07-13 18:45:57 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "comentario"=>{"comentavel_id"=>"7", "comentavel_type"=>"Restaurante", "comentario"=>"teste 5"}, "commit"=>"Criar Comentario"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO `comentarios` (`comentario`, `comentavel_type`, `comentavel_id`, `created_at`, `updated_at`) VALUES ('teste 5', 'Restaurante', 7, '2016-07-13 21:45:57.560918', '2016-07-13 21:45:57.560918')
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:46:36 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 73ms (Views: 66.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:46:38 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.4ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.3ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (2.8ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.7ms)
+  Rendered restaurantes/show.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 82ms (Views: 78.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/comentarios" for 127.0.0.1 at 2016-07-13 18:46:41 -0300
+Processing by ComentariosController#create as JS
+  Parameters: {"utf8"=>"✓", "comentario"=>{"comentavel_id"=>"7", "comentavel_type"=>"Restaurante", "comentario"=>"dsfsdf"}, "commit"=>"Criar Comentario"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `comentarios` (`comentario`, `comentavel_type`, `comentavel_id`, `created_at`, `updated_at`) VALUES ('dsfsdf', 'Restaurante', 7, '2016-07-13 21:46:41.614380', '2016-07-13 21:46:41.614380')
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.4ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (2.2ms)
+  Rendered comentarios/create.js.erb within layouts/application (10.2ms)
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 5.1ms)
+
+
+Started DELETE "/comentarios/25" for 127.0.0.1 at 2016-07-13 18:46:44 -0300
+Processing by ComentariosController#destroy as JS
+  Parameters: {"id"=>"25"}
+  [1m[35mComentario Load (0.3ms)[0m  SELECT  `comentarios`.* FROM `comentarios` WHERE `comentarios`.`id` = 25 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  DELETE FROM `comentarios` WHERE `comentarios`.`id` = 25
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (ActiveRecord: 4.3ms)
+
+
+Started DELETE "/comentarios/24" for 127.0.0.1 at 2016-07-13 18:46:45 -0300
+Processing by ComentariosController#destroy as JS
+  Parameters: {"id"=>"24"}
+  [1m[35mComentario Load (0.3ms)[0m  SELECT  `comentarios`.* FROM `comentarios` WHERE `comentarios`.`id` = 24 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  DELETE FROM `comentarios` WHERE `comentarios`.`id` = 24
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6ms (ActiveRecord: 4.0ms)
+
+
+Started DELETE "/comentarios/21" for 127.0.0.1 at 2016-07-13 18:46:45 -0300
+Processing by ComentariosController#destroy as JS
+  Parameters: {"id"=>"21"}
+  [1m[35mComentario Load (0.4ms)[0m  SELECT  `comentarios`.* FROM `comentarios` WHERE `comentarios`.`id` = 21 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `comentarios` WHERE `comentarios`.`id` = 21
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 5ms (ActiveRecord: 3.1ms)
+
+
+Started DELETE "/comentarios/23" for 127.0.0.1 at 2016-07-13 18:46:46 -0300
+Processing by ComentariosController#destroy as JS
+  Parameters: {"id"=>"23"}
+  [1m[35mComentario Load (0.3ms)[0m  SELECT  `comentarios`.* FROM `comentarios` WHERE `comentarios`.`id` = 23 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `comentarios` WHERE `comentarios`.`id` = 23
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 4ms (ActiveRecord: 2.4ms)
+
+
+Started DELETE "/comentarios/19" for 127.0.0.1 at 2016-07-13 18:46:47 -0300
+Processing by ComentariosController#destroy as JS
+  Parameters: {"id"=>"19"}
+  [1m[35mComentario Load (0.5ms)[0m  SELECT  `comentarios`.* FROM `comentarios` WHERE `comentarios`.`id` = 19 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  DELETE FROM `comentarios` WHERE `comentarios`.`id` = 19
+  [1m[36m (2.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 8ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:52:52 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[35mQualificacao Load (0.1ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes`
+  Rendered qualificacoes/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/qualificacoes/new" for 127.0.0.1 at 2016-07-13 18:53:22 -0300
+Processing by QualificacoesController#new as HTML
+  Rendered qualificacoes/_form.html.erb (5.4ms)
+  Rendered qualificacoes/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:53:35 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 83ms (Views: 82.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes/2" for 127.0.0.1 at 2016-07-13 18:53:36 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 2 LIMIT 1
+  Rendered qualificacoes/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:53:41 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes/new" for 127.0.0.1 at 2016-07-13 18:53:42 -0300
+Processing by QualificacoesController#new as HTML
+  Rendered qualificacoes/_form.html.erb (3.6ms)
+  Rendered qualificacoes/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:53:45 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes`
+  Rendered qualificacoes/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 69ms (Views: 68.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes/2" for 127.0.0.1 at 2016-07-13 18:53:48 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQualificacao Load (0.1ms)[0m  [1mSELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 2 LIMIT 1[0m
+  Rendered qualificacoes/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:53:52 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes`
+  Rendered qualificacoes/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 84ms (Views: 83.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes/1" for 127.0.0.1 at 2016-07-13 18:53:56 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQualificacao Load (1.3ms)[0m  [1mSELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 1 LIMIT 1[0m
+  Rendered qualificacoes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 66ms (Views: 63.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:53:57 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes`
+  Rendered qualificacoes/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes/2" for 127.0.0.1 at 2016-07-13 18:54:06 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 2 LIMIT 1[0m
+  Rendered qualificacoes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 69ms (Views: 67.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:54:07 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes`
+  Rendered qualificacoes/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 83ms (Views: 81.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes/1" for 127.0.0.1 at 2016-07-13 18:54:09 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 1 LIMIT 1[0m
+  Rendered qualificacoes/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-13 18:56:50 -0300
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (0.2ms)[0m  SELECT `clientes`.* FROM `clientes`
+  Rendered clientes/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/clientes/2" for 127.0.0.1 at 2016-07-13 18:56:52 -0300
+Processing by ClientesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 2 LIMIT 1[0m
+  Rendered clientes/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 67ms (Views: 65.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-13 18:56:53 -0300
+Processing by ClientesController#index as HTML
+  [1m[35mCliente Load (0.2ms)[0m  SELECT `clientes`.* FROM `clientes`
+  Rendered clientes/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:56:54 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (1.0ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/qualificacoes/1" for 127.0.0.1 at 2016-07-13 18:57:07 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 1 LIMIT 1
+  Rendered qualificacoes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 18:57:09 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (0.4ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 79ms (Views: 77.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:57:38 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 107ms (Views: 105.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:57:42 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.6ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (2.2ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.8ms)
+  Rendered restaurantes/show.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 78ms (Views: 75.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 18:58:46 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 18:58:48 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.3ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (2.1ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.3ms)
+  [1m[35mQualificacao Load (1.5ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7
+  Rendered collection (0.0ms)
+  Rendered restaurantes/show.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 80ms (Views: 75.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:08:37 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:08:40 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.2ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (1.8ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.3ms)
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7
+  Rendered collection (0.0ms)
+  Rendered restaurantes/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 92ms (Views: 90.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:08:44 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (1.5ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 19:08:45 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[35mQualificacao Load (0.3ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes`
+  Rendered qualificacoes/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 84ms (Views: 82.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:08:51 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:08:53 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurante Load (0.5ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1
+  [1m[36mComentario Load (0.5ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (0.5ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.2ms)
+  [1m[35mQualificacao Load (0.3ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2
+  Rendered qualificacoes/_qualificacao.html.erb (10.8ms)
+  Rendered restaurantes/show.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `valor' for #<Qualificacao:0x007f05fb109ef8>):
+    1: <p id='<%= "qualificacoes_#{qualificacao.id}" %>'>
+    2: 	<%= qualificacao.nota %> - <%= qualificacao.valor %>
+    3: 	<%= link_to '(remover)', comentario, method: 'delete', remote: true, id: "remove_qualificacao_#{qualificacao.id}" %>
+    4: </p>
+  app/views/qualificacoes/_qualificacao.html.erb:2:in `_app_views_qualificacoes__qualificacao_html_erb__25057339680611807_69831831753720'
+  app/views/restaurantes/show.html.erb:32:in `_app_views_restaurantes_show_html_erb___97507944995291368_69831676534960'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.1ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:09:41 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (0.3ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.4ms)
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2[0m
+  Rendered qualificacoes/_qualificacao.html.erb (42.6ms)
+  Rendered restaurantes/show.html.erb within layouts/application (60.2ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined local variable or method `comentario' for #<#<Class:0x007f05e8d5a9b8>:0x00000003571a40>
+Did you mean?  comentario_url):
+    1: <p id='<%= "qualificacoes_#{qualificacao.id}" %>'>
+    2: 	<%= qualificacao.nota %> - <%= qualificacao.valor_gasto %>
+    3: 	<%= link_to '(remover)', comentario, method: 'delete', remote: true, id: "remove_qualificacao_#{qualificacao.id}" %>
+    4: </p>
+  app/views/qualificacoes/_qualificacao.html.erb:3:in `_app_views_qualificacoes__qualificacao_html_erb__25057339680611807_69831832247260'
+  app/views/restaurantes/show.html.erb:32:in `_app_views_restaurantes_show_html_erb___97507944995291368_69831676534960'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (27.1ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.9ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.7ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:09:42 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1
+  [1m[36mComentario Load (0.2ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (0.3ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.8ms)
+  [1m[35mQualificacao Load (0.1ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2
+  Rendered qualificacoes/_qualificacao.html.erb (45.3ms)
+  Rendered restaurantes/show.html.erb within layouts/application (52.9ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (undefined local variable or method `comentario' for #<#<Class:0x007f05e8d5a9b8>:0x007f05fad3a2a0>
+Did you mean?  comentario_url):
+    1: <p id='<%= "qualificacoes_#{qualificacao.id}" %>'>
+    2: 	<%= qualificacao.nota %> - <%= qualificacao.valor_gasto %>
+    3: 	<%= link_to '(remover)', comentario, method: 'delete', remote: true, id: "remove_qualificacao_#{qualificacao.id}" %>
+    4: </p>
+  app/views/qualificacoes/_qualificacao.html.erb:3:in `_app_views_qualificacoes__qualificacao_html_erb__25057339680611807_69831832247260'
+  app/views/restaurantes/show.html.erb:32:in `_app_views_restaurantes_show_html_erb___97507944995291368_69831676534960'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.9ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.2ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.5ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  [1m[35mComentario Load (0.1ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (0.3ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.1ms)
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2[0m
+  Rendered qualificacoes/_qualificacao.html.erb (0.9ms)
+  Rendered restaurantes/show.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 19:10:28 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 19:10:29 -0300
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:10:42 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 86ms (Views: 83.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/3" for 127.0.0.1 at 2016-07-13 19:10:45 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 3 LIMIT 1[0m
+  [1m[35mComentario Load (0.4ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 3 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered collection (0.0ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.5ms)
+  [1m[36mQualificacao Load (1.1ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 3[0m
+  Rendered qualificacoes/_qualificacao.html.erb (0.3ms)
+  Rendered restaurantes/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 83ms (Views: 79.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:10:50 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 110ms (Views: 107.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:11:04 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (2.2ms)
+  Rendered comentarios/_novo_comentario.html.erb (3.3ms)
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7[0m
+  Rendered collection (0.0ms)
+  Rendered restaurantes/show.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-07-13 19:22:00 -0300
+Processing by HomeController#home as HTML
+  Rendered home/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 76ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:22:01 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 84ms (Views: 69.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:22:03 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.3ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.1ms)
+  [1m[36mQualificacao Load (0.1ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2[0m
+  Rendered qualificacoes/_qualificacao.html.erb (0.6ms)
+  Rendered restaurantes/show.html.erb within layouts/application (42.9ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (Missing partial qualificacao/_novo_qualificacao with {:locale=>[:pt], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/joelcedraz/Google Drive/workspaces/curso/app/views"
+  * "/home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/twitter-bootstrap-rails-3.2.2/app/views"
+):
+    32:  <%= render @restaurante.qualificacoes %>
+    33: </div>
+    34: 
+    35: <%= novo_qualificacao @restaurante %>
+  app/helpers/application_helper.rb:8:in `novo_qualificacao'
+  app/views/restaurantes/show.html.erb:35:in `_app_views_restaurantes_show_html_erb___97507944995291368_69831816445600'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.8ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.6ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.2ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mRestaurante Load (0.1ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1
+  [1m[36mComentario Load (0.1ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (0.6ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.2ms)
+  [1m[35mQualificacao Load (0.1ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2
+  Rendered qualificacoes/_qualificacao.html.erb (0.5ms)
+  Rendered qualificacoes/_novo_qualificacao.html.erb (1.9ms)
+  Rendered restaurantes/show.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 103ms (Views: 89.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:45 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:24:46 -0300
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  [1m[35mComentario Load (0.1ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (0.2ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.2ms)
+  [1m[36mQualificacao Load (0.1ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2[0m
+  Rendered qualificacoes/_qualificacao.html.erb (0.2ms)
+  Rendered qualificacoes/_novo_qualificacao.html.erb (6.0ms)
+  Rendered restaurantes/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 19:27:23 -0300
+
+
+Started POST "/qualificacoes" for 127.0.0.1 at 2016-07-13 19:27:46 -0300
+Processing by QualificacoesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C4xXkpdoRvHjsVbWpywaf18lYAkg3/wRE7pRQtOumt6tLPbClfpLb28AW3IRK5NsmI4Uh1DRt//0v5PCZoO1Zw==", "qualificacao"=>{"restaurante_id"=>"2", "nota"=>"7", "valor_gasto"=>"8"}, "commit"=>"Criar Qualificacao"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mRestaurante Load (2.1ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  [1m[35mRestaurante Exists (4.3ms)[0m  SELECT  1 AS one FROM `restaurantes` WHERE (`restaurantes`.`nome` = BINARY 'Emporio' AND `restaurantes`.`id` != 2) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered qualificacoes/_form.html.erb (2.8ms)
+  Rendered qualificacoes/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 98ms (Views: 67.5ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 19:27:55 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes`
+  Rendered qualificacoes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:28:25 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 101ms (Views: 99.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:28:29 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.2ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (1.4ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.7ms)
+  [1m[35mQualificacao Load (0.3ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7
+  Rendered collection (0.0ms)
+  Rendered qualificacoes/_novo_qualificacao.html.erb (37.3ms)
+  Rendered restaurantes/show.html.erb within layouts/application (48.8ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (undefined local variable or method `cliente' for #<#<Class:0x007f05fb5fa610>:0x007f05fb60d4e0>
+Did you mean?  cliente_url):
+    1: <%= form_for Qualificacao.new do |f| %>
+    2: 
+    3: 	<%= f.hidden_field :restaurante_id, value: restaurante.id %>
+    4: 	<%= f.hidden_field :cliente_id, value: cliente.id %>
+    5: 	<%= f.label :nota %><%= f.number_field :nota, class: "form-control" %><br />
+    6: 	<%= f.label :valor_gasto %> <%= f.number_field :valor_gasto, class: "form-control" %> <br />
+    7: 	<%= f.submit %>
+  app/views/qualificacoes/_novo_qualificacao.html.erb:4:in `block in _app_views_qualificacoes__novo_qualificacao_html_erb__2094945085851092737_69831834771220'
+  app/views/qualificacoes/_novo_qualificacao.html.erb:1:in `_app_views_qualificacoes__novo_qualificacao_html_erb__2094945085851092737_69831834771220'
+  app/helpers/application_helper.rb:8:in `novo_qualificacao'
+  app/views/restaurantes/show.html.erb:35:in `_app_views_restaurantes_show_html_erb___97507944995291368_69831834528120'
+
+
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.1ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.7ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/joelcedraz/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (42.2ms)
+
+
+Started GET "/restaurantes/" for 127.0.0.1 at 2016-07-13 19:29:04 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:29:08 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.2ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (1.6ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.1ms)
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7
+  Rendered collection (0.0ms)
+  Rendered qualificacoes/_novo_qualificacao.html.erb (3.2ms)
+  Rendered restaurantes/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:29:14 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC[0m
+  Rendered restaurantes/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:29:16 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.2ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (1.5ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.0ms)
+  [1m[35mQualificacao Load (0.3ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7
+  Rendered collection (0.0ms)
+  Rendered qualificacoes/_novo_qualificacao.html.erb (2.2ms)
+  Rendered restaurantes/show.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/clientes" for 127.0.0.1 at 2016-07-13 19:29:19 -0300
+Processing by ClientesController#index as HTML
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT `clientes`.* FROM `clientes`[0m
+  Rendered clientes/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:29:20 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (2.0ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 78ms (Views: 74.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:29:30 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (1.0ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.8ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.4ms)
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7[0m
+  Rendered collection (0.0ms)
+  Rendered qualificacoes/_novo_qualificacao.html.erb (2.8ms)
+  Rendered restaurantes/show.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 80ms (Views: 76.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.2ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (0.9ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.1ms)
+  [1m[35mQualificacao Load (0.2ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7
+  Rendered collection (0.0ms)
+  [1m[36mCliente Load (0.1ms)[0m  [1mSELECT `clientes`.* FROM `clientes`[0m
+  Rendered qualificacoes/_novo_qualificacao.html.erb (5.3ms)
+  Rendered restaurantes/show.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 84ms (Views: 82.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:01 -0300
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mComentario Load (0.2ms)[0m  [1mSELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'[0m
+  Rendered comentarios/_comentario.html.erb (1.2ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.4ms)
+  [1m[35mQualificacao Load (0.1ms)[0m  SELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7
+  Rendered collection (0.0ms)
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT `clientes`.* FROM `clientes`[0m
+  Rendered qualificacoes/_novo_qualificacao.html.erb (5.1ms)
+  Rendered restaurantes/show.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 98ms (Views: 95.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 19:32:38 -0300
+
+
+Started POST "/qualificacoes" for 127.0.0.1 at 2016-07-13 19:32:55 -0300
+Processing by QualificacoesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MQcbe8NCck7D619aS28o59zW0fC8HdRJzzg/8YyOJxOXp7orwdB/0E9aUv79aKH0G32lfswTn6coPf1xOaMIqg==", "qualificacao"=>{"restaurante_id"=>"7", "cliente_id"=>"1", "nota"=>"4", "valor_gasto"=>"21"}, "commit"=>"Criar Qualificacao"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mCliente Load (0.4ms)[0m  [1mSELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1[0m
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mRestaurante Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `restaurantes` WHERE (`restaurantes`.`nome` = BINARY 'Garota Carioca' AND `restaurantes`.`id` != 7) LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `qualificacoes` (`cliente_id`, `restaurante_id`, `nota`, `valor_gasto`, `created_at`, `updated_at`) VALUES (1, 7, 4, 21.0, '2016-07-13 22:32:55.935827', '2016-07-13 22:32:55.935827')
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/qualificacoes/3
+Completed 302 Found in 11ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/qualificacoes/3" for 127.0.0.1 at 2016-07-13 19:32:55 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQualificacao Load (0.4ms)[0m  SELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 3 LIMIT 1
+  Rendered qualificacoes/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 19:33:08 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (0.5ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/qualificacoes/2" for 127.0.0.1 at 2016-07-13 19:33:10 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mQualificacao Load (0.4ms)[0m  SELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 2 LIMIT 1
+  Rendered qualificacoes/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 19:33:12 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:33:14 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:33:15 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.1ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.7ms)
+  [1m[36mQualificacao Load (0.4ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7[0m
+  Rendered qualificacoes/_qualificacao.html.erb (0.5ms)
+  [1m[35mCliente Load (0.3ms)[0m  SELECT `clientes`.* FROM `clientes`
+  Rendered qualificacoes/_novo_qualificacao.html.erb (3.9ms)
+  Rendered restaurantes/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 74ms (Views: 72.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.1ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (0.7ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.1ms)
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7[0m
+  Rendered qualificacoes/_qualificacao.html.erb (0.8ms)
+  [1m[35mCliente Load (0.2ms)[0m  SELECT `clientes`.* FROM `clientes`
+  Rendered qualificacoes/_novo_qualificacao.html.erb (4.0ms)
+  Rendered restaurantes/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:24 -0300
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:34:42 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.3ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.9ms)
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7[0m
+  [1m[35mCliente Load (1.7ms)[0m  SELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1
+  Rendered qualificacoes/_qualificacao.html.erb (3.6ms)
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT `clientes`.* FROM `clientes`[0m
+  Rendered qualificacoes/_novo_qualificacao.html.erb (3.3ms)
+  Rendered restaurantes/show.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 113ms (Views: 109.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.self-2fe4f8a61d73606fbcb036b41f380591906a4da65a9eb5ec0a210fe6980b2ca7.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/comentarios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/bootstrap_and_overrides.self-2cb3834583dfbaf0a39c7139750bf963e05d79cbe811126997e013400be5d8dc.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/clientes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/ola_mundo.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/pratos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/qualificacoes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/restaurantes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/scaffolds.self-a574fd1f53aab4e3280fc93812e910bb0b2448200c4797e9d17e957d42fa72e5.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/clientes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/comentarios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/ola_mundo.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/pratos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/qualificacoes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/restaurantes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2016-07-13 19:34:43 -0300
+
+
+Started POST "/qualificacoes" for 127.0.0.1 at 2016-07-13 19:43:07 -0300
+Processing by QualificacoesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XThmXcphSGJFr8vqD2L0rk7vHDla//z713WcMBce/i/7mMcNyPNF/Mkexk65ZX29iURotyrxtxUwcF6wojPRlg==", "qualificacao"=>{"restaurante_id"=>"7", "cliente_id"=>"1", "nota"=>"10", "valor_gasto"=>"150"}, "commit"=>"Criar Qualificacao"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1[0m
+  [1m[35mRestaurante Load (0.1ms)[0m  SELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1
+  [1m[36mRestaurante Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM `restaurantes` WHERE (`restaurantes`.`nome` = BINARY 'Garota Carioca' AND `restaurantes`.`id` != 7) LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO `qualificacoes` (`cliente_id`, `restaurante_id`, `nota`, `valor_gasto`, `created_at`, `updated_at`) VALUES (1, 7, 10, 150.0, '2016-07-13 22:43:07.147390', '2016-07-13 22:43:07.147390')
+  [1m[36m (2.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/qualificacoes/4
+Completed 302 Found in 12ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/qualificacoes/4" for 127.0.0.1 at 2016-07-13 19:43:07 -0300
+Processing by QualificacoesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mQualificacao Load (0.3ms)[0m  SELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 4 LIMIT 1
+  Rendered qualificacoes/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 19:43:09 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (0.4ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:43:13 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 73ms (Views: 71.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:43:14 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (0.5ms)
+  Rendered comentarios/_novo_comentario.html.erb (1.5ms)
+  [1m[36mQualificacao Load (0.3ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2[0m
+  [1m[35mCliente Load (0.1ms)[0m  SELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 2 LIMIT 1
+  Rendered qualificacoes/_qualificacao.html.erb (0.9ms)
+  [1m[36mCliente Load (0.1ms)[0m  [1mSELECT `clientes`.* FROM `clientes`[0m
+  Rendered qualificacoes/_novo_qualificacao.html.erb (3.4ms)
+  Rendered restaurantes/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:43:27 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/3" for 127.0.0.1 at 2016-07-13 19:43:28 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurante Load (0.3ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 3 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 3 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered collection (0.0ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.0ms)
+  [1m[36mQualificacao Load (0.4ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 3[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1
+  Rendered qualificacoes/_qualificacao.html.erb (1.5ms)
+  [1m[36mCliente Load (0.1ms)[0m  [1mSELECT `clientes`.* FROM `clientes`[0m
+  Rendered qualificacoes/_novo_qualificacao.html.erb (2.9ms)
+  Rendered restaurantes/show.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:43:32 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurantes/2" for 127.0.0.1 at 2016-07-13 19:43:33 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurante Load (1.9ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 2 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 2 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (0.6ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.1ms)
+  [1m[36mQualificacao Load (0.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 2[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 2 LIMIT 1
+  Rendered qualificacoes/_qualificacao.html.erb (1.6ms)
+  [1m[36mCliente Load (0.2ms)[0m  [1mSELECT `clientes`.* FROM `clientes`[0m
+  Rendered qualificacoes/_novo_qualificacao.html.erb (5.8ms)
+  Rendered restaurantes/show.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 99ms (Views: 94.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 19:43:38 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.3ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 88ms (Views: 86.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 19:43:40 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.2ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.8ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.5ms)
+  [1m[36mQualificacao Load (0.3ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7[0m
+  [1m[35mCliente Load (0.1ms)[0m  SELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1[0m  [["id", 1]]
+  Rendered qualificacoes/_qualificacao.html.erb (1.3ms)
+  [1m[35mCliente Load (0.1ms)[0m  SELECT `clientes`.* FROM `clientes`
+  Rendered qualificacoes/_novo_qualificacao.html.erb (2.3ms)
+  Rendered restaurantes/show.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/qualificacoes/4" for 127.0.0.1 at 2016-07-13 20:21:50 -0300
+Processing by QualificacoesController#destroy as JS
+  Parameters: {"id"=>"4"}
+  [1m[36mQualificacao Load (0.3ms)[0m  [1mSELECT  `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.9ms)[0m  [1mDELETE FROM `qualificacoes` WHERE `qualificacoes`.`id` = 4[0m
+  [1m[35m (2.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/qualificacoes
+Completed 200 OK in 9ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/qualificacoes" for 127.0.0.1 at 2016-07-13 20:21:50 -0300
+Processing by QualificacoesController#index as HTML
+  [1m[36mQualificacao Load (1.2ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes`[0m
+  Rendered qualificacoes/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/restaurantes" for 127.0.0.1 at 2016-07-13 20:21:54 -0300
+Processing by RestaurantesController#index as HTML
+  [1m[35mRestaurante Load (0.2ms)[0m  SELECT `restaurantes`.* FROM `restaurantes`  ORDER BY `restaurantes`.`nome` ASC
+  Rendered restaurantes/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurantes/7" for 127.0.0.1 at 2016-07-13 20:21:56 -0300
+Processing by RestaurantesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mRestaurante Load (0.6ms)[0m  [1mSELECT  `restaurantes`.* FROM `restaurantes` WHERE `restaurantes`.`id` = 7 LIMIT 1[0m
+  [1m[35mComentario Load (0.2ms)[0m  SELECT `comentarios`.* FROM `comentarios` WHERE `comentarios`.`comentavel_id` = 7 AND `comentarios`.`comentavel_type` = 'Restaurante'
+  Rendered comentarios/_comentario.html.erb (1.5ms)
+  Rendered comentarios/_novo_comentario.html.erb (2.2ms)
+  [1m[36mQualificacao Load (0.3ms)[0m  [1mSELECT `qualificacoes`.* FROM `qualificacoes` WHERE `qualificacoes`.`restaurante_id` = 7[0m
+  [1m[35mCliente Load (0.2ms)[0m  SELECT  `clientes`.* FROM `clientes` WHERE `clientes`.`id` = 1 LIMIT 1
+  Rendered qualificacoes/_qualificacao.html.erb (1.7ms)
+  [1m[36mCliente Load (0.3ms)[0m  [1mSELECT `clientes`.* FROM `clientes`[0m
+  Rendered qualificacoes/_novo_qualificacao.html.erb (3.6ms)
+  Rendered restaurantes/show.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 89ms (Views: 86.4ms | ActiveRecord: 1.5ms)
